@@ -85,11 +85,11 @@ class Main extends Component {
                   .filter(
                     (elem) => elem.Type === "movie" && elem.Poster !== "N/A"
                   )
-                  .slice(0, 6)
+                  .slice(0, 5)
                   .map((elem, index) => (
                     <Col className=" mb-2 px-1" key={`${elem.imdbID}-${index}`}>
                       <img
-                        className="img-fluid"
+                        className="img-fluid h-100"
                         src={elem.Poster}
                         alt="movie"
                       />
